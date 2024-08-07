@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid black 1px;
+  padding: 1rem;
+}
+
+header > p {
+  font-size: 1.4rem;
+  font-style: italic;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 4px;
+  font-weight: 700;
+}
+
+header > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-size: 16px;
+}
+
+/* Form Styles */
+.formSect {
+  padding: 1rem;
+}
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem 0rem;
+  padding: 4px;
+  justify-content: center;
+}
+
+form > input {
+  background-color: transparent;
+  width: 80%;
+  height: 20px;
+  padding: 1rem;
+  color: black;
+  font-size: 16px;
+  outline: none;
+  border-radius: 20px;
+  border: solid black 1px;
+}
+
+form > button {
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  background-color: black;
+}
+
+form > button:focus {
+  border: none;
+}
+form > button:hover {
+  background-color: rgb(80, 76, 76);
+  transition-duration: 0.5s;
+}
+
+/* Tabs Styles */
+.tabSect {
+  margin-bottom: 40px;
+}
+.tabBtns {
+  display: flex;
+  gap: 20px;
+  padding: 0 1rem;
+}
+.tabBtns > button {
+  background-color: transparent;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  color: black;
+  border: solid black 1px;
+  cursor: pointer;
+}
+.tabBtns > .activeTab {
+  background-color: black;
+  color: white;
+}
+.tabBtns > button:hover {
+  background-color: rgb(80, 76, 76);
+  border: solid rgb(80, 76, 76) 1px;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.eachTabSect {
+  padding: 2.5rem 1rem 1rem 1rem;
+  font-size: 16px;
+}
+.eachTab {
+  transition-duration: 0.6s;
+  display: flex;
+  width: full;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+.eachTabContent:hover {
+  cursor: pointer;
+  background-color: rgb(80, 75, 75);
+  transition-duration: 0.6s;
+  padding: 0.6rem;
+}
+.eachTabContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid black 1px;
+  padding: 0.7rem 0;
+}
+.eachTabContent > div {
+  display: flex;
+  gap: 20px;
+}
+.ellipsis {
+  position: relative;
+}
+.taskActions {
+  position: absolute;
+  background: black;
+  color: white;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition-duration: 0.6s;
+  border-radius: 14px;
+}
+.taskActions > p {
+  padding: 0.5rem;
+}
+.taskActions > p:hover {
+  background-color: white;
+  color: black;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: transparent;
+}
+.checkbox:checked {
+  color: white;
+  background-color: black;
+}
+
+.bulkActions {
+  display: flex;
+
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.bulkActions > button {
+  cursor: pointer;
+  background-color: transparent;
+  transition-duration: 0.6s;
+  color: black;
+  width: 200px;
+  height: 50px;
+  border: solid black 1px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.bulkActions > div {
+  cursor: pointer;
+  background-color: transparent;
+  transition-duration: 0.6s;
+  color: black;
+  width: 80px;
+  height: 40px;
+  border: solid black 1px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.bulkActions > button:hover {
+  background-color: black;
+  color: white;
+}
+
+.noTasks {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 1rem;
+}
