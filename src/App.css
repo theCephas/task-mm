@@ -75,7 +75,11 @@ form > button:hover {
 .tabBtns {
   display: flex;
   gap: 20px;
+  align-items: center;
   padding: 0 1rem;
+}
+.tabBtns > input {
+  margin-top: 4px;
 }
 .tabBtns > button {
   background-color: transparent;
